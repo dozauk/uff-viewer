@@ -3,11 +3,11 @@
 <head>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <meta charset="utf-8">
-    <meta name="description" content="sqlite file viewer">
+    <meta name="description" content="UFF sqlite file viewer">
     <meta name="keywords" content="sqlite,viewer,db,database,online">
-    <meta name="author" content="Juraj Novák">
+    <meta name="author" content="Juraj Novák, Simon Mendoza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SQLite Viewer</title>
+    <title>UFF Viewer</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/select2.css" rel="stylesheet">
     <link href="css/select2-bootstrap.css" rel="stylesheet">
@@ -30,7 +30,7 @@
             <div class="col-xs-6">
                 <img src="img/logo.svg" class="img-responsive pull-left" style="margin-right: 16px;"/>
                 <h3>SQLite Viewer</h3>
-                <p>view sqlite file online</p>
+                <p>view UFF file online</p>
             </div>
             <div class="col-xs-6">
                 <a href="#" id="resizer" class="pull-right">
@@ -50,12 +50,12 @@
 
     <div class="panel panel-info" id="dropzone" onclick="dropzoneClick(this)">
         <div id="drop-text" class="panel-body">
-            <b>Drop file here</b> to load content or click on this box to open file dialog.<br/>
+            <b>Drop UFF file here</b> to load content or click on this box to open file dialog.<br/>
 
             <div class="nouploadinfo small">No file will be uploaded - uses only JavaScript HTML5 FileReader.<br/><br/>
             </div>
             
-            <a id="sample-db-link" class="no-propagate small" href="examples/Chinook_Sqlite.sqlite">&hellip; or download &amp; try this sample file</a>
+            <!-- <a id="sample-db-link" class="no-propagate small" href="examples/Chinook_Sqlite.sqlite">&hellip; or download &amp; try this sample file</a> -->
         </div>
         <div id="drop-loading" class="panel-body" style="display: none">
             <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span> <b>Processing file ...</b>
@@ -112,17 +112,22 @@
 
 <div class="container">
     <footer>
-        &copy; 2015, Juraj Novák, <a href="http://inloop.eu/" target="_blank">inloop.eu</a><br>
+        &copy; Simon Mendoza 2020
+        <br>
+        Based on sqlite-viewer &copy; 2015, Juraj Novák, <a href="http://inloop.eu/" target="_blank">inloop.eu</a>
+        <br>
         <small>| <a href="http://inloop.github.io/">other projects</a> |</small>
     </footer>
 </div>
 
 <input type="file" id="dropzone-dialog" style="opacity: 0;display:none">
 
+<!--    
 <div class="ribbon right grey hidden-xs">
     <a href="https://github.com/inloop/sqlite-viewer">Fork me on GitHub</a>
 </div>
-
+-->
+    
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/filereader.js"></script>
 <script src="js/sql.js"></script>
@@ -133,6 +138,7 @@
 <script src="js/main.js?v=8"></script>
 
 <script>
+    /*
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -140,7 +146,7 @@
 
     ga('create', 'UA-67535271-1', 'auto');
     ga('send', 'pageview');
-
+*/
 </script>
 
 </body>
